@@ -1,7 +1,7 @@
-from flask import Flask, request, jsonify, make_response, render_template, redirect, flash, session
+from flask import Flask, request, jsonify, make_response, render_template, redirect
 from Model import Model
 from ModelConn import ClienteModel
-#from flask_mysqldb import MySQL
+
 
 # Aqui fazemos somente as chamadas
 
@@ -20,18 +20,10 @@ def somar():
 
 
 
-
-
-
 @app.route('/v1/aula/cadastrar', methods=["GET"])
 def cadastrarEmail():
     return ClienteModel.cadastrarEmail()
 
-
-
-#@app.route('/v1/aula/cadastrar/atualizar', methods=["GET"])
-#def atualizar():
- #   return ClienteModel.atualizar()
 
 
 

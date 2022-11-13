@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, make_response, render_template, redirect, session, flash
+from flask import Flask, request, jsonify, make_response, render_template, redirect
 import json
 
 # implementação de regra de negocio
